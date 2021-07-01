@@ -31,8 +31,21 @@ class UserCard extends StatelessWidget {
         color: appSecondaryColor,
         borderRadius: BorderRadius.circular(10.0),
       ),
-      child: Center(
-        child: Text(user.name),
+      child: Stack(
+        children: [
+          Center(
+            child: CircleAvatar(
+              backgroundColor: user.color,
+              child: Center(
+                child: Text(
+                  user.name[0],
+                  style: TextStyle(fontSize: 25.0, color: appWhite),
+                ),
+              ),
+              radius: 35.0,
+            ),
+          ),
+        ],
       ),
     );
   }

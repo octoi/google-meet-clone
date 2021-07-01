@@ -34,6 +34,17 @@ class AppUtils extends StatelessWidget {
               color: appWhite,
             ),
           ),
+          Container(
+            padding: EdgeInsets.all(12.0),
+            decoration: BoxDecoration(
+              color: appWhite,
+              borderRadius: BorderRadius.circular(50.0),
+            ),
+            child: Icon(
+              Icons.mic_off,
+              color: appSecondaryColor,
+            ),
+          ),
         ],
       ),
     );

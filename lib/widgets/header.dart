@@ -35,7 +35,7 @@ class AppHeader extends StatelessWidget {
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.share),
+              icon: Icon(Icons.headphones),
               color: appWhite,
             ),
           ],

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_meet/utils/constants.dart';
+import 'package:google_meet/widgets/body.dart';
 import 'package:google_meet/widgets/header.dart';
+import 'package:google_meet/widgets/utils.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -16,6 +18,8 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               AppHeader(),
+              AppBody(),
+              AppUtils(),
             ],
           ),
         ),

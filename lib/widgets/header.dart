@@ -7,6 +7,7 @@ class AppHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Row(
           children: [
@@ -23,6 +24,20 @@ class AppHeader extends StatelessWidget {
                 fontSize: 20.0,
               ),
             )
+          ],
+        ),
+        Row(
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.cameraswitch_outlined),
+              color: appWhite,
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.share),
+              color: appWhite,
+            ),
           ],
         )
       ],

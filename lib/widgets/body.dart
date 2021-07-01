@@ -55,7 +55,23 @@ class UserCard extends StatelessWidget {
                 fontSize: 16.0,
               ),
             ),
-          )
+          ),
+          Positioned(
+            top: 10.0,
+            right: 10.0,
+            child: Container(
+              padding: EdgeInsets.all(2.0),
+              decoration: BoxDecoration(
+                color: appGrey,
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+              child: Icon(
+                Icons.mic_off,
+                size: 20.0,
+                color: appWhite,
+              ),
+            ),
+          ),
         ],
       ),
     );

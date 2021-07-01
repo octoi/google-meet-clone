@@ -30,7 +30,7 @@ class AppHeader extends StatelessWidget {
           children: [
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.cameraswitch_outlined),
+              icon: Icon(Icons.flip_camera_android_sharp),
               color: appWhite,
             ),
             IconButton(

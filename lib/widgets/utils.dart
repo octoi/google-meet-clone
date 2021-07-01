@@ -9,6 +9,8 @@ class AppUtils extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(8.0),
       child: Row(
+        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
             padding: EdgeInsets.all(15.0),
@@ -18,6 +20,17 @@ class AppUtils extends StatelessWidget {
             ),
             child: Icon(
               Icons.call_end,
+              color: appWhite,
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(12.0),
+            decoration: BoxDecoration(
+              color: appSecondaryColor,
+              borderRadius: BorderRadius.circular(50.0),
+            ),
+            child: Icon(
+              Icons.videocam_outlined,
               color: appWhite,
             ),
           ),

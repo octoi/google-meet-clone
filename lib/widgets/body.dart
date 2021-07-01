@@ -72,6 +72,14 @@ class UserCard extends StatelessWidget {
               ),
             ),
           ),
+          Positioned(
+            bottom: 15.0,
+            right: 10.0,
+            child: Icon(
+              Icons.more_vert,
+              color: appWhite,
+            ),
+          ),
         ],
       ),
     );

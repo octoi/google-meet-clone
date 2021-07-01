@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_meet/utils/constants.dart';
 
@@ -9,7 +10,7 @@ class AppUtils extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(8.0),
       child: Row(
-        // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
@@ -43,6 +44,28 @@ class AppUtils extends StatelessWidget {
             child: Icon(
               Icons.mic_off,
               color: appSecondaryColor,
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(12.0),
+            decoration: BoxDecoration(
+              color: appSecondaryColor,
+              borderRadius: BorderRadius.circular(50.0),
+            ),
+            child: Icon(
+              CupertinoIcons.hand_raised,
+              color: appWhite,
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(12.0),
+            decoration: BoxDecoration(
+              color: appSecondaryColor,
+              borderRadius: BorderRadius.circular(50.0),
+            ),
+            child: Icon(
+              Icons.more_vert,
+              color: appWhite,
             ),
           ),
         ],

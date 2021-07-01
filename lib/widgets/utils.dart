@@ -7,6 +7,20 @@ class AppUtils extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    void openBottomSheet() {
+      showModalBottomSheet(
+        context: context,
+        builder: (BuildContext context) {
+          return Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Container(
+              color: appPrimaryColor,
+            ),
+          );
+        },
+      );
+    }
+
     return Container(
       padding: EdgeInsets.all(8.0),
       child: Row(
@@ -57,15 +71,18 @@ class AppUtils extends StatelessWidget {
               color: appWhite,
             ),
           ),
-          Container(
-            padding: EdgeInsets.all(12.0),
-            decoration: BoxDecoration(
-              color: appSecondaryColor,
-              borderRadius: BorderRadius.circular(50.0),
-            ),
-            child: Icon(
-              Icons.more_vert,
-              color: appWhite,
+          GestureDetector(
+            onTap: openBottomSheet,
+            child: Container(
+              padding: EdgeInsets.all(12.0),
+              decoration: BoxDecoration(
+                color: appSecondaryColor,
+                borderRadius: BorderRadius.circular(50.0),
+              ),
+              child: Icon(
+                Icons.more_vert,
+                color: appWhite,
+              ),
             ),
           ),
         ],

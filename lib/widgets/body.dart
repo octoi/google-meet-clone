@@ -45,6 +45,17 @@ class UserCard extends StatelessWidget {
               radius: 35.0,
             ),
           ),
+          Positioned(
+            bottom: 15.0,
+            left: 15.0,
+            child: Text(
+              user.name,
+              style: TextStyle(
+                color: appWhite,
+                fontSize: 16.0,
+              ),
+            ),
+          )
         ],
       ),
     );

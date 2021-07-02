@@ -4,10 +4,14 @@ import 'package:google_meet/utils/constants.dart';
 class UtilMainButton extends StatefulWidget {
   final IconData primaryIcon;
   final IconData secondaryIcon;
+  final bool isWhiteBg;
 
-  const UtilMainButton(
-      {Key? key, required this.primaryIcon, required this.secondaryIcon})
-      : super(key: key);
+  const UtilMainButton({
+    Key? key,
+    required this.primaryIcon,
+    required this.secondaryIcon,
+    this.isWhiteBg = false,
+  }) : super(key: key);
 
   @override
   _UtilMainButtonState createState() => _UtilMainButtonState();
@@ -17,6 +21,7 @@ class _UtilMainButtonState extends State<UtilMainButton> {
   @override
   Widget build(BuildContext context) {
     IconData icon = widget.primaryIcon;
+    bool isWhiteBg = widget.isWhiteBg;
 
     return GestureDetector(
       onTap: () {
@@ -29,12 +34,12 @@ class _UtilMainButtonState extends State<UtilMainButton> {
       child: Container(
         padding: EdgeInsets.all(12.0),
         decoration: BoxDecoration(
-          color: appWhite,
+          color: isWhiteBg ? appWhite : appSecondaryColor,
           borderRadius: BorderRadius.circular(50.0),
         ),
         child: Icon(
           icon,
-          color: appSecondaryColor,
+          color: isWhiteBg ? appSecondaryColor : appWhite,
         ),
       ),
     );

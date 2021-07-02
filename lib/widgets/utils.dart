@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_meet/utils/constants.dart';
+import 'package:google_meet/widgets/util_icon_btn.dart';
 
 class AppUtils extends StatelessWidget {
   const AppUtils({Key? key}) : super(key: key);
@@ -16,7 +17,16 @@ class AppUtils extends StatelessWidget {
             child: Container(
               color: appPrimaryColor,
               child: Column(
-                children: [],
+                children: [
+                  Row(
+                    children: [
+                      UtilIconButton(
+                        icon: Icons.question_answer_outlined,
+                        title: "In Call\nMessages",
+                      )
+                    ],
+                  )
+                ],
               ),
             ),
           );

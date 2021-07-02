@@ -81,6 +81,7 @@ class UserCard extends StatelessWidget {
                   context: context,
                   builder: (BuildContext context) {
                     return Container(
+                      padding: EdgeInsets.all(20.0),
                       decoration: BoxDecoration(
                         color: appWhite,
                         borderRadius: BorderRadius.only(
@@ -89,7 +90,17 @@ class UserCard extends StatelessWidget {
                         ),
                       ),
                       child: Column(
-                        children: [],
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            user.name,
+                            style: TextStyle(
+                              fontSize: 20.0,
+                            ),
+                          ),
+                          SizedBox(height: 10.0),
+                          Divider(),
+                        ],
                       ),
                     );
                   },

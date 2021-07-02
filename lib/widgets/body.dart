@@ -77,11 +77,17 @@ class UserCard extends StatelessWidget {
             right: 10.0,
             child: InkWell(
               onTap: () {
-                showBottomSheet(
+                showModalBottomSheet(
                   context: context,
                   builder: (BuildContext context) {
                     return Container(
-                      color: appWhite,
+                      decoration: BoxDecoration(
+                        color: appWhite,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20.0),
+                          topRight: Radius.circular(20.0),
+                        ),
+                      ),
                       child: Column(
                         children: [],
                       ),

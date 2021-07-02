@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_meet/utils/constants.dart';
 import 'package:google_meet/utils/data.dart';
+import 'package:google_meet/widgets/body_widgets/sheet_button.dart';
 
 class UserCard extends StatelessWidget {
   final Participant user;
@@ -84,6 +85,34 @@ class UserCard extends StatelessWidget {
                           ),
                           SizedBox(height: 10.0),
                           Divider(),
+                          Expanded(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                SheetButton(
+                                  icon: Icons.mic_off,
+                                  title: "Mute",
+                                  disabled: true,
+                                ),
+                                SheetButton(
+                                  icon: Icons.push_pin_outlined,
+                                  title: "Pin",
+                                ),
+                                SheetButton(
+                                  icon: Icons.remove_circle_outline,
+                                  title: "Remove",
+                                ),
+                                SheetButton(
+                                  icon: Icons.fullscreen,
+                                  title: "Full screen",
+                                ),
+                                SheetButton(
+                                  icon: Icons.close,
+                                  title: "Cancel",
+                                ),
+                              ],
+                            ),
+                          )
                         ],
                       ),
                     );

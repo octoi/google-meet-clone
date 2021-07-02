@@ -18,17 +18,25 @@ class UtilMainButton extends StatefulWidget {
 }
 
 class _UtilMainButtonState extends State<UtilMainButton> {
+  var icon;
+  var isWhiteBg;
+
+  @override
+  void initState() {
+    super.initState();
+
+    setState(() {
+      icon = widget.primaryIcon;
+      isWhiteBg = widget.isWhiteBg;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    IconData icon = widget.primaryIcon;
-    bool isWhiteBg = widget.isWhiteBg;
-
     return GestureDetector(
       onTap: () {
         setState(() {
-          icon = icon == widget.primaryIcon
-              ? widget.secondaryIcon
-              : widget.primaryIcon;
+          isWhiteBg = !isWhiteBg;
         });
       },
       child: Container(

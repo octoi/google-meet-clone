@@ -13,7 +13,7 @@ class AppUtils extends StatelessWidget {
         context: context,
         builder: (BuildContext context) {
           return Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(25.0),
             child: Container(
               color: appPrimaryColor,
               child: Column(
@@ -35,7 +35,25 @@ class AppUtils extends StatelessWidget {
                         title: "Turn on\ncaoptions",
                       ),
                     ],
-                  )
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      UtilIconButton(
+                        icon: Icons.announcement_outlined,
+                        title: "Report a\nproblem",
+                      ),
+                      UtilIconButton(
+                        icon: Icons.report_outlined,
+                        title: "Report abuse",
+                      ),
+                      UtilIconButton(
+                        icon: Icons.settings_outlined,
+                        title: "Settings",
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ),

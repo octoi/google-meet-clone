@@ -72,11 +72,12 @@ class AppUtils extends StatelessWidget {
           ),
           UtilMainButton(
             primaryIcon: Icons.videocam_outlined,
-            secondaryIcon: Icons.videocam_outlined,
+            secondaryIcon: Icons.videocam_off_outlined,
           ),
           UtilMainButton(
             primaryIcon: Icons.mic_off,
-            secondaryIcon: Icons.mic_off,
+            secondaryIcon: Icons.mic,
+            isWhiteBg: true,
           ),
           UtilMainButton(
             primaryIcon: CupertinoIcons.hand_raised,

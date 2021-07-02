@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_meet/utils/constants.dart';
-import 'package:google_meet/widgets/util_icon_btn.dart';
+import 'package:google_meet/widgets/utils_widgets/util_icon_btn.dart';
+import 'package:google_meet/widgets/utils_widgets/util_main_btn.dart';
 
 class AppUtils extends StatelessWidget {
   const AppUtils({Key? key}) : super(key: key);
@@ -69,38 +70,17 @@ class AppUtils extends StatelessWidget {
               color: appWhite,
             ),
           ),
-          Container(
-            padding: EdgeInsets.all(12.0),
-            decoration: BoxDecoration(
-              color: appSecondaryColor,
-              borderRadius: BorderRadius.circular(50.0),
-            ),
-            child: Icon(
-              Icons.videocam_outlined,
-              color: appWhite,
-            ),
+          UtilMainButton(
+            primaryIcon: Icons.videocam_outlined,
+            secondaryIcon: Icons.videocam_outlined,
           ),
-          Container(
-            padding: EdgeInsets.all(12.0),
-            decoration: BoxDecoration(
-              color: appWhite,
-              borderRadius: BorderRadius.circular(50.0),
-            ),
-            child: Icon(
-              Icons.mic_off,
-              color: appSecondaryColor,
-            ),
+          UtilMainButton(
+            primaryIcon: Icons.mic_off,
+            secondaryIcon: Icons.mic_off,
           ),
-          Container(
-            padding: EdgeInsets.all(12.0),
-            decoration: BoxDecoration(
-              color: appSecondaryColor,
-              borderRadius: BorderRadius.circular(50.0),
-            ),
-            child: Icon(
-              CupertinoIcons.hand_raised,
-              color: appWhite,
-            ),
+          UtilMainButton(
+            primaryIcon: CupertinoIcons.hand_raised,
+            secondaryIcon: CupertinoIcons.hand_raised,
           ),
           GestureDetector(
             onTap: openBottomSheet,

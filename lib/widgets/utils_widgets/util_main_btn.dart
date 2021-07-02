@@ -37,6 +37,9 @@ class _UtilMainButtonState extends State<UtilMainButton> {
       onTap: () {
         setState(() {
           isWhiteBg = !isWhiteBg;
+          icon = icon == widget.primaryIcon
+              ? widget.secondaryIcon
+              : widget.primaryIcon;
         });
       },
       child: Container(

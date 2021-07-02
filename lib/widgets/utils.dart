@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_meet/utils/constants.dart';
+import 'package:google_meet/widgets/util_icon_btn.dart';
 
 class AppUtils extends StatelessWidget {
   const AppUtils({Key? key}) : super(key: key);
@@ -12,9 +13,39 @@ class AppUtils extends StatelessWidget {
         context: context,
         builder: (BuildContext context) {
           return Padding(
-            padding: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(25.0),
             child: Container(
               color: appPrimaryColor,
+              height: 250.0,
+              child: GridView.count(
+                crossAxisCount: 3,
+                children: [
+                  UtilIconButton(
+                    icon: Icons.question_answer_outlined,
+                    title: "In call messages",
+                  ),
+                  UtilIconButton(
+                    icon: Icons.present_to_all_outlined,
+                    title: "Share screen",
+                  ),
+                  UtilIconButton(
+                    icon: Icons.closed_caption_outlined,
+                    title: "Turn on caoptions",
+                  ),
+                  UtilIconButton(
+                    icon: Icons.announcement_outlined,
+                    title: "Report a problem",
+                  ),
+                  UtilIconButton(
+                    icon: Icons.report_outlined,
+                    title: "Report abuse",
+                  ),
+                  UtilIconButton(
+                    icon: Icons.settings_outlined,
+                    title: "Settings",
+                  ),
+                ],
+              ),
             ),
           );
         },
@@ -22,7 +53,7 @@ class AppUtils extends StatelessWidget {
     }
 
     return Container(
-      padding: EdgeInsets.all(8.0),
+      padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,

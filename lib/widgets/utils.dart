@@ -15,6 +15,9 @@ class AppUtils extends StatelessWidget {
             padding: const EdgeInsets.all(20.0),
             child: Container(
               color: appPrimaryColor,
+              child: Column(
+                children: [],
+              ),
             ),
           );
         },
@@ -22,7 +25,7 @@ class AppUtils extends StatelessWidget {
     }
 
     return Container(
-      padding: EdgeInsets.all(8.0),
+      padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.center,

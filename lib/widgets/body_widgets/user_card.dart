@@ -109,6 +109,7 @@ class UserCard extends StatelessWidget {
                                 SheetButton(
                                   icon: Icons.close,
                                   title: "Cancel",
+                                  cancel: true,
                                 ),
                               ],
                             ),

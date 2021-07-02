@@ -16,43 +16,33 @@ class AppUtils extends StatelessWidget {
             padding: const EdgeInsets.all(25.0),
             child: Container(
               color: appPrimaryColor,
-              child: Column(
+              height: 250.0,
+              child: GridView.count(
+                crossAxisCount: 3,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      UtilIconButton(
-                        icon: Icons.question_answer_outlined,
-                        title: "In call\nmessages",
-                      ),
-                      UtilIconButton(
-                        icon: Icons.present_to_all_outlined,
-                        title: "Share screen",
-                      ),
-                      UtilIconButton(
-                        icon: Icons.closed_caption_outlined,
-                        title: "Turn on\ncaoptions",
-                      ),
-                    ],
+                  UtilIconButton(
+                    icon: Icons.question_answer_outlined,
+                    title: "In call messages",
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      UtilIconButton(
-                        icon: Icons.announcement_outlined,
-                        title: "Report a\nproblem",
-                      ),
-                      UtilIconButton(
-                        icon: Icons.report_outlined,
-                        title: "Report abuse",
-                      ),
-                      UtilIconButton(
-                        icon: Icons.settings_outlined,
-                        title: "Settings",
-                      ),
-                    ],
+                  UtilIconButton(
+                    icon: Icons.present_to_all_outlined,
+                    title: "Share screen",
+                  ),
+                  UtilIconButton(
+                    icon: Icons.closed_caption_outlined,
+                    title: "Turn on caoptions",
+                  ),
+                  UtilIconButton(
+                    icon: Icons.announcement_outlined,
+                    title: "Report a problem",
+                  ),
+                  UtilIconButton(
+                    icon: Icons.report_outlined,
+                    title: "Report abuse",
+                  ),
+                  UtilIconButton(
+                    icon: Icons.settings_outlined,
+                    title: "Settings",
                   ),
                 ],
               ),

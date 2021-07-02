@@ -19,11 +19,21 @@ class AppUtils extends StatelessWidget {
               child: Column(
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       UtilIconButton(
                         icon: Icons.question_answer_outlined,
-                        title: "In Call\nMessages",
-                      )
+                        title: "In call\nmessages",
+                      ),
+                      UtilIconButton(
+                        icon: Icons.present_to_all_outlined,
+                        title: "Share screen",
+                      ),
+                      UtilIconButton(
+                        icon: Icons.closed_caption_outlined,
+                        title: "Turn on\ncaoptions",
+                      ),
                     ],
                   )
                 ],

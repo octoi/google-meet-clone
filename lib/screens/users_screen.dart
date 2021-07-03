@@ -6,22 +6,37 @@ class UsersScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: appWhite,
-      appBar: AppBar(
+    return DefaultTabController(
+      length: 2,
+      child: Scaffold(
         backgroundColor: appWhite,
-        elevation: 0.0,
-        leading: IconButton(
-          onPressed: () => Navigator.pop(context),
-          icon: Icon(Icons.arrow_back),
-          color: appGrey,
-        ),
-        title: Text(
-          "About This Call",
-          style: TextStyle(
-            color: appSecondaryColor,
-            fontWeight: FontWeight.w400,
+        appBar: AppBar(
+          backgroundColor: appWhite,
+          elevation: 0.0,
+          leading: IconButton(
+            onPressed: () => Navigator.pop(context),
+            icon: Icon(Icons.arrow_back),
+            color: appGrey,
           ),
+          title: Text(
+            "About This Call",
+            style: TextStyle(
+              color: appSecondaryColor,
+              fontWeight: FontWeight.w400,
+            ),
+          ),
+          bottom: TabBar(
+            tabs: [
+              Tab(icon: Icon(Icons.directions_car)),
+              Tab(icon: Icon(Icons.directions_transit)),
+            ],
+          ),
+        ),
+        body: TabBarView(
+          children: [
+            Icon(Icons.directions_car),
+            Icon(Icons.directions_transit),
+          ],
         ),
       ),
     );

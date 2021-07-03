@@ -38,8 +38,18 @@ class UsersScreen extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            UserTab(),
-            InfoTab(),
+            Column(
+              children: [
+                Divider(),
+                UserTab(),
+              ],
+            ),
+            Column(
+              children: [
+                Divider(),
+                InfoTab(),
+              ],
+            ),
           ],
         ),
       ),

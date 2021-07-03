@@ -39,12 +39,14 @@ class UsersScreen extends StatelessWidget {
         body: TabBarView(
           children: [
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Divider(),
                 UserTab(),
               ],
             ),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Divider(),
                 InfoTab(),

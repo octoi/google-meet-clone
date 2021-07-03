@@ -48,7 +48,14 @@ class UserTab extends StatelessWidget {
                         children: [
                           CircleAvatar(
                             backgroundColor: user.color,
-                            child: Center(child: Text(user.name[0])),
+                            child: Center(
+                              child: Text(
+                                user.name[0],
+                                style: TextStyle(
+                                  color: appWhite,
+                                ),
+                              ),
+                            ),
                           ),
                           SizedBox(width: 20.0),
                           Text(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_meet/utils/constants.dart';
+import 'package:google_meet/utils/data.dart';
 
 class MessageScreen extends StatelessWidget {
   const MessageScreen({Key? key}) : super(key: key);
@@ -29,7 +30,43 @@ class MessageScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Expanded(child: ListView()),
+          Expanded(
+            child: ListView.builder(
+              physics: BouncingScrollPhysics(),
+              itemCount: messages.length,
+              itemBuilder: (BuildContext context, int idx) {
+                Participant user = getRandomUser();
+                return Container(
+                  padding: EdgeInsets.symmetric(
+                    vertical: 10.0,
+                    horizontal: 15.0,
+                  ),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: user.color,
+                        child: Center(
+                          child: Text(
+                            user.name[0],
+                            style: TextStyle(color: appWhite),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 10.0),
+                      Text(
+                        messages[idx],
+                        style: TextStyle(
+                          fontSize: 15.0,
+                          color: appSecondaryColor,
+                        ),
+                      )
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
           Container(
             padding: const EdgeInsets.all(10.0),
             child: TextField(

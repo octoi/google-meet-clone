@@ -14,7 +14,14 @@ class UsersScreen extends StatelessWidget {
         leading: IconButton(
           onPressed: () => Navigator.pop(context),
           icon: Icon(Icons.arrow_back),
-          color: appSecondaryColor,
+          color: appGrey,
+        ),
+        title: Text(
+          "About This Call",
+          style: TextStyle(
+            color: appSecondaryColor,
+            fontWeight: FontWeight.w400,
+          ),
         ),
       ),
     );

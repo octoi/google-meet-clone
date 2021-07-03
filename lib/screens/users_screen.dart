@@ -38,19 +38,25 @@ class UsersScreen extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Divider(),
-                UserTab(),
-              ],
+            SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Divider(),
+                  UserTab(),
+                ],
+              ),
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Divider(),
-                InfoTab(),
-              ],
+            SingleChildScrollView(
+              physics: BouncingScrollPhysics(),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Divider(),
+                  InfoTab(),
+                ],
+              ),
             ),
           ],
         ),

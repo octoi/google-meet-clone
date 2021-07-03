@@ -8,18 +8,18 @@ The app include following screens of app
 - Message screen
 - Info screen
 
-<a href="./apk/google-meet-demo.apk">Download The APK demo</a>
+<a href="https://github.com/your-code-is-my-property/google-meet-clone/raw/master/apk/google-meet-demo.apk">Download The APK demo</a>
 
 ### SCREENSHOTS 🖼️
 
-<img src="./screenshots/screenshot1.png" width="45%" />
-|<img src="./screenshots/screenshot2.png" width="45%" />
+<img src="./screenshots/screenshot1.png" width="30%" />
+|<img src="./screenshots/screenshot2.png" width="30%" />
 
-<img src="./screenshots/screenshot3.png" width="45%" />
-|<img src="./screenshots/screenshot4.png" width="45%" />
+<img src="./screenshots/screenshot3.png" width="30%" />
+|<img src="./screenshots/screenshot4.png" width="30%" />
 
-<img src="./screenshots/screenshot5.png" width="45%" />
-|<img src="./screenshots/screenshot6.png" width="45%" />
+<img src="./screenshots/screenshot5.png" width="30%" />
+|<img src="./screenshots/screenshot6.png" width="30%" />
 
 ### SETUP 👷‍♂️
 

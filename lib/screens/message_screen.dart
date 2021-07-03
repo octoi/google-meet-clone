@@ -32,27 +32,25 @@ class MessageScreen extends StatelessWidget {
           Expanded(child: ListView()),
           Container(
             padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                Flexible(
-                  child: TextField(
-                    decoration: InputDecoration(
-                      filled: true,
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(30),
-                        borderSide: BorderSide(
-                          width: 0,
-                          style: BorderStyle.none,
-                        ),
-                      ),
-                      fillColor: appTextFieldGrey,
-                      contentPadding: EdgeInsets.all(20.0),
-                      hintStyle: TextStyle(color: Colors.grey[800]),
-                      hintText: "Type in your text",
-                    ),
+            child: TextField(
+              decoration: InputDecoration(
+                filled: true,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide: BorderSide(
+                    width: 0,
+                    style: BorderStyle.none,
                   ),
                 ),
-              ],
+                fillColor: appTextFieldGrey,
+                contentPadding: EdgeInsets.all(20.0),
+                hintStyle: TextStyle(color: appGrey),
+                hintText: "Send message",
+                suffixIcon: Icon(
+                  Icons.send,
+                  color: appGrey.withOpacity(0.5),
+                ),
+              ),
             ),
           ),
         ],

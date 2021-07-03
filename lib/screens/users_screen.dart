@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_meet/utils/constants.dart';
+import 'package:google_meet/widgets/tab_screen/info_tab.dart';
+import 'package:google_meet/widgets/tab_screen/user_tab.dart';
 
 class UsersScreen extends StatelessWidget {
   const UsersScreen({Key? key}) : super(key: key);
@@ -26,16 +28,18 @@ class UsersScreen extends StatelessWidget {
             ),
           ),
           bottom: TabBar(
+            indicatorColor: appRed,
+            indicatorSize: TabBarIndicatorSize.label,
             tabs: [
-              Tab(icon: Icon(Icons.directions_car)),
-              Tab(icon: Icon(Icons.directions_transit)),
+              Tab(child: Text("People", style: TextStyle(color: appRed))),
+              Tab(child: Text("Information", style: TextStyle(color: appRed)))
             ],
           ),
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.directions_car),
-            Icon(Icons.directions_transit),
+            UserTab(),
+            InfoTab(),
           ],
         ),
       ),

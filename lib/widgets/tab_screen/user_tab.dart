@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:google_meet/utils/constants.dart';
+import 'package:google_meet/utils/data.dart';
 import 'package:google_meet/widgets/body_widgets/sheet_button.dart';
+import 'package:google_meet/widgets/body_widgets/user_card.dart';
 
 class UserTab extends StatelessWidget {
   const UserTab({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return Padding(
       padding: EdgeInsets.all(20.0),
-      physics: BouncingScrollPhysics(),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -31,6 +32,27 @@ class UserTab extends StatelessWidget {
               ],
             ),
           ),
+          SizedBox(height: 20.0),
+          Text("IN CALL", style: TextStyle(color: appGrey)),
+          SizedBox(height: 20.0),
+          Column(
+            children: roomUsers.map((user) {
+              return Column(
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(
+                        backgroundColor: user.color,
+                        child: Center(child: Text(user.name[0])),
+                      ),
+                      SizedBox(width: 10.0)
+                    ],
+                  ),
+                  SizedBox(height: 10.0),
+                ],
+              );
+            }).toList(),
+          )
         ],
       ),
     );

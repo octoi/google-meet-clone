@@ -24,6 +24,7 @@ class AppUtils extends StatelessWidget {
                   UtilIconButton(
                     icon: Icons.question_answer_outlined,
                     title: "In call messages",
+                    isMessageButton: true,
                   ),
                   UtilIconButton(
                     icon: Icons.present_to_all_outlined,

@@ -40,12 +40,21 @@ class UserTab extends StatelessWidget {
               return Column(
                 children: [
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       CircleAvatar(
                         backgroundColor: user.color,
                         child: Center(child: Text(user.name[0])),
                       ),
-                      SizedBox(width: 10.0)
+                      SizedBox(width: 20.0),
+                      Text(
+                        user.name,
+                        style: TextStyle(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w600,
+                          color: appSecondaryColor.withOpacity(0.9),
+                        ),
+                      ),
                     ],
                   ),
                   SizedBox(height: 10.0),

@@ -1,16 +1,45 @@
-# google_meet
+# GOOGLE MEET CLONE
 
-A new Flutter project.
+Google Meet UI Clone Using <a href="https://flutter.dev">__Flutter__</a> 🐦
 
-## Getting Started
+The app include following screens of app
 
-This project is a starting point for a Flutter application.
+- Home screen
+- Message screen
+- Info screen
 
-A few resources to get you started if this is your first Flutter project:
+<a href="./apk/google-meet-demo.apk">Download The APK demo</a>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### SCREENSHOTS 🖼️
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="./screenshots/screenshot1.png" width="45%" />
+|<img src="./screenshots/screenshot2.png" width="45%" />
+
+<img src="./screenshots/screenshot3.png" width="45%" />
+|<img src="./screenshots/screenshot4.png" width="45%" />
+
+<img src="./screenshots/screenshot5.png" width="45%" />
+|<img src="./screenshots/screenshot6.png" width="45%" />
+
+### SETUP 👷‍♂️
+
+> You need <a href="https://flutter.dev">Flutter</a> installed to run this project
+
+Download This Project
+
+```bash
+$ git clone <CURRENT-PAGE-URL>
+```
+
+Install stuffs
+
+```bash
+$ flutter pub get
+```
+
+Run the project
+
+```bash
+$ flutter run
+```
+

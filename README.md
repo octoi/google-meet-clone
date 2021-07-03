@@ -8,7 +8,7 @@ The app include following screens of app
 - Message screen
 - Info screen
 
-<a href="https://github.com/your-code-is-my-property/google-meet-clone/raw/master/apk/google-meet-demo.apk">Download The APK demo</a>
+<a href="https://github.com/your-code-is-my-property/google-meet-clone/raw/demo/apk/google-meet-demo.apk">Download The APK demo</a>
 
 ### SCREENSHOTS 🖼️
 

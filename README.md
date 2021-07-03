@@ -12,14 +12,11 @@ The app include following screens of app
 
 ### SCREENSHOTS 🖼️
 
-<img src="./screenshots/screenshot1.png" width="30%" />
-|<img src="./screenshots/screenshot2.png" width="30%" />
+<img src="./screenshots/screenshot1.png" width="45%" />|<img src="./screenshots/screenshot2.png" width="45%" />
 
-<img src="./screenshots/screenshot3.png" width="30%" />
-|<img src="./screenshots/screenshot4.png" width="30%" />
+<img src="./screenshots/screenshot3.png" width="45%" />|<img src="./screenshots/screenshot4.png" width="45%" />
 
-<img src="./screenshots/screenshot5.png" width="30%" />
-|<img src="./screenshots/screenshot6.png" width="30%" />
+<img src="./screenshots/screenshot5.png" width="45%" />|<img src="./screenshots/screenshot6.png" width="45%" />
 
 ### SETUP 👷‍♂️
 
